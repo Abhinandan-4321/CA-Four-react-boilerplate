@@ -9,7 +9,7 @@
 }
 body{
   background-image: url("/src/assets/day.jpg");
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Lato', sans-serif;
@@ -83,6 +83,8 @@ body{
   box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.09) 0px -12px 30px,
     rgba(0, 0, 0, 0.09) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px;
   transition: background-color 0.5s, transform 0.5s;
+  background-color: white;
+  color: black;
 }
 .btn:hover {
   background-color: rgb(234, 224, 224);
@@ -101,6 +103,8 @@ body{
   border-radius: 50px;
   transition: background-color 0.5s, transform 0.5s;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.09) 0px -12px 30px, rgba(0, 0, 0, 0.09) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px;
+  background-color: white;
+  color: black;
 }
 
 .hbtn:hover {
@@ -119,6 +123,8 @@ body{
   border-radius: 40px;
   transition: background-color 0.5s, transform 0.5s;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.09) 0px -12px 30px, rgba(0, 0, 0, 0.09) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px; 
+  background-color: white;
+  color: black;
 }
 
 .changeBg:hover {
@@ -159,6 +165,8 @@ body{
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.09) 0px -12px 30px, rgba(0, 0, 0, 0.09) 0px 4px 6px, rgba(0, 0, 0, 0.12) 0px 12px 13px, rgba(0, 0, 0, 0.06) 0px -3px 5px; 
   font-size: x-large;
+  background-color: white;
+  color: black;
 
 }
 

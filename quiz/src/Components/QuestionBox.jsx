@@ -35,12 +35,14 @@ function QuestionBox() {
     const handleRemove = () => {
         setIshighlighted(false)
     }
-
+    
+    // function for restarting the game
     const restartGame = () => {
         setScore(0);
         setCorrectAns(0)
         setCurrentQues(0)
     }
+
 
     // condition if the current state reaches above 4 passing in score and correct answers as props
     if (currentQues > 4) {
@@ -51,18 +53,22 @@ function QuestionBox() {
   
     return (
     <div className = "box">
+
+        {/* top container */}
         <div className="quesandnum">
             <h2 style={{color:"white"}}>Question {currentQues + 1} of 5</h2>
             <p style = {{color: isHighlighted?"red":"black"}} className = "question">{Questions[currentQues].text}</p>
         </div>
-
+        
+        {/* option-buttons */}
         <div className='btn-container'>
             {Questions[currentQues].options.map((ans, i)=>{
             return (
             <button className = "btn" onClick = {()=>handleAnswerInput(ans.isCorrect)}key = {i}>{ans.text}</button>)
             })}
         </div>
-        
+
+        {/* highlight buttons */}
         <div className='highlight-btns'>
             <button className='hbtn' onClick={handleHighLight}>Highlight</button>
             <button className="hbtn"onClick={handleRemove}>Remove Highlight</button>
