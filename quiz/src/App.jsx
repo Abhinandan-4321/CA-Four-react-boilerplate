@@ -5,7 +5,7 @@ import day from './assets/day.jpg'
 import night from './assets/night.jpeg'
 
 function App() {
-  const [isLight, setLight] = useState(true);
+  const [isLight, setLight] = useState(false);
   const [isGameStarted, setIsGameStarted] = useState(false);
 
   const handleBgChange = () => {
