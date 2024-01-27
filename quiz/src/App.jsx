@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import QuestionBox from './Components/QuestionBox';
+import day from './assets/day.jpg'
+import night from './assets/night.jpeg'
 
 function App() {
   const [isLight, setLight] = useState(true);
@@ -8,8 +10,8 @@ function App() {
 
   const handleBgChange = () => {
     isLight
-      ? (document.body.style.backgroundImage = `url('/src/assets/day.jpg')`)
-      : (document.body.style.backgroundImage = `url('/src/assets/night.jpeg')`);
+      ? (document.body.style.backgroundImage = `url(${day})`)
+      : (document.body.style.backgroundImage = `url(${night})`);
     console.log(isLight);
     setLight(!isLight);
   };
